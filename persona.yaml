@@ -1,0 +1,73 @@
+name: operator-copilot
+display_name: Operator Copilot
+version: 1.0.0
+description: >
+  AI partner for non-developer business operators who think in systems.
+  Configured for direct communication, anti-sycophancy, and action over reporting.
+  Built for COOs, founders, and operators who use AI as a strategic collaborator,
+  not a code assistant.
+
+author:
+  name: Justin
+  github: justinbcc
+
+category: executive
+tags:
+  - operator
+  - coo
+  - non-developer
+  - anti-sycophancy
+  - business-automation
+  - strategic
+
+compatibility:
+  - claude-code
+  - cursor
+  - windsurf
+
+requires_mcp:
+  - name: google-drive
+    required: false
+    purpose: "Document management, file organization, spreadsheet operations"
+  - name: n8n
+    required: false
+    purpose: "Workflow automation, bot management, API orchestration"
+
+requires_skills:
+  - xlsx
+  - pdf
+  - docx
+
+variables:
+  - key: YOUR_NAME
+    prompt: "What's your full name?"
+    required: true
+  - key: YOUR_FIRST_NAME
+    prompt: "What's your first name?"
+    required: true
+  - key: YOUR_ROLE
+    prompt: "What's your job title?"
+    required: true
+  - key: YOUR_COMPANY
+    prompt: "Company or organization name?"
+    required: true
+  - key: YOUR_INDUSTRY
+    prompt: "What industry are you in? (e.g., fintech, healthcare, consulting)"
+    required: true
+  - key: YOUR_TIMEZONE
+    prompt: "Your timezone (e.g., Asia/Dubai, America/New_York)?"
+    required: true
+    default: "UTC"
+  - key: YOUR_CURRENCY
+    prompt: "Primary currency (e.g., USD, AED, EUR)?"
+    required: false
+    default: "USD"
+  - key: TEAM_SIZE
+    prompt: "How many people on your team?"
+    required: false
+  - key: TECH_STACK
+    prompt: "What platforms do you use? (e.g., Google Workspace, Slack, Notion)"
+    required: false
+
+license: MIT
+pricing: free
